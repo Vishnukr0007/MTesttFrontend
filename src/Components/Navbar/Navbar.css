@@ -1,0 +1,14 @@
+.navbar .form-control {
+    max-width: 400px;
+    border: 1px solid #ccc;
+  }
+  
+  .navbar .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .navbar .dropdown-toggle {
+    font-weight: 500;
+  }
+  
