@@ -68,3 +68,92 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+          <Divider sx={{ width: '100%', marginBottom: 2 }} />
+
+          <Box sx={{ width: '100%', textAlign: 'center', marginTop: 2 }}>
+            {/* Row 1: Department and Designation */}
+            <Box
+              sx={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                paddingX: 2, // Horizontal padding
+                marginBottom: 1, // Space between rows
+              }}
+            >
+              <Box sx={{ textAlign: 'left' }}>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{
+                    fontWeight: 'bold',
+                    textShadow: '0 2px 4px rgba(0, 0, 0, 0.2)', // Slight shadow for glow effect
+                  }}
+                >
+                  {employee.department}
+                </Typography>
+                <Typography variant="caption" color="text.secondary" sx={{ fontWeight: 400 }}>
+                  Department
+                </Typography>
+              </Box>
+
+              <Box sx={{ textAlign: 'right' }}>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{
+                    fontWeight: 'bold',
+                    textShadow: '0 2px 4px rgba(0, 0, 0, 0.2)', // Slight shadow for glow effect
+                  }}
+                >
+                  {employee.designation}
+                </Typography>
+                <Typography variant="caption" color="text.secondary" sx={{ fontWeight: 400 }}>
+                  Designation
+                </Typography>
+              </Box>
+            </Box>
+
+            {/* Row 2: Date of Joining and Salary */}
+            <Box
+              sx={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                paddingX: 2, // Horizontal padding
+              }}
+            >
+              <Box sx={{ textAlign: 'left' }}>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{
+                    fontWeight: 'bold',
+                    textShadow: '0 2px 4px rgba(0, 0, 0, 0.2)', // Slight shadow for glow effect
+                  }}
+                >
+                  {employee.dateOfJoining}
+                </Typography>
+                <Typography variant="caption" color="text.secondary" sx={{ fontWeight: 400 }}>
+                  Date of Joining
+                </Typography>
+              </Box>
+
+              <Box sx={{ textAlign: 'right' }}>
+                <Typography
+                  variant="body2"
+                  color="text.secondary"
+                  sx={{
+                    fontWeight: 'bold',
+                    textShadow: '0 2px 4px rgba(0, 0, 0, 0.2)', // Slight shadow for glow effect
+                  }}
+                >
+                  ${employee.salary}
+                </Typography>
+                <Typography variant="caption" color="text.secondary" sx={{ fontWeight: 400 }}>
+                  Salary
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
